@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>ACP Brevet Times</title>
+    </head>
+    <body>
+        <div>
+            {% for article in items %}
+            <div>
+		<h3>Entry---------------------------------------------------</h1>
+                <p>MILES: {{ article.miles }} mi</p>
+                <p>KILOMETERS: {{ article.km }} km</p>
+		<p>LOCATION: {{ article.loc }}</p>
+		<p>OPEN TIME: {{ article.open }}</p>
+		<p>CLOSE TIME: {{ article.close }}</p>
+                <hl />
+            </div>
+            {% endfor %}
+        </div>
+    </body>
+</html>
